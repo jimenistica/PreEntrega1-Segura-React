@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+        "name":"Vaso Térmico Stanley",
+        "price": 30000,
+        "category": "vasos",
+        "img":{
+           "principal": "/vaso-stanley.webp",
+           "secundaria": "/vaso-stanley-2.webp"
+        },
+        "stock": 5,
+        "description": "Vaso térmico Stanley desc"
+    },
+    {
+        "id":2,
+        "name":"Set de mate Stanley",
+        "price": 60000,
+        "category": "sets-materos",
+        "img":{
+            "principal": "/set-stanley.webp",
+            "secundaria": "/set-stanley-2.webp"
+         },
+        "stock": 3,
+        "description": "Set de mate termo y mate"
+    },
+    {
+        "id":3,
+        "name":"Set botellas",
+        "price": 10000,
+        "category": "botellas",
+        "img":{
+            "principal": "/set-botellas-3.webp",
+            "secundaria": "/set-botellas-3-2.webp"
+         },
+        "stock": 7,
+        "description": "set botellas 3 en 1"
+    },
+    {
+        "id":4,
+        "name":"Veladores diseño",
+        "price": 16000,
+        "category": "deco",
+        "img":{
+            "principal": "/lampara-galaxia.webp",
+            "secundaria": "/lampara-galaxia-2.webp"
+         },
+        "stock": 10,
+        "description": "velador universo varios modelos"
+    }
+
+]

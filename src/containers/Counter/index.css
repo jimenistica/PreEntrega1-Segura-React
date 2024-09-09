@@ -1,0 +1,8 @@
+.counter-div{
+    display: flex;
+    flex-direction: column;
+}
+.buttons-div{
+    display: flex;
+    flex-direction: row;
+}

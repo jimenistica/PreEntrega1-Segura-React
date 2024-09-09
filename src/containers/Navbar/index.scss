@@ -1,4 +1,4 @@
-.header{
+/* .header{
     background-color: #292929;
     color: snow;
     padding: 10px 0px;
@@ -30,4 +30,40 @@
 .navbar__link{
     font-size: 2em;
     line-height: 1;
+} */
+.header {
+  background-color: $black;
+  color: $white;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  &__img{
+    width: 60%;
+  }
+  &__item {
+    padding: .8rem;
+    transition: all .3s linear;
+    cursor: pointer;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+      border-radius: 4px;
+    }
+  }
+
+}
+
+  
+  
