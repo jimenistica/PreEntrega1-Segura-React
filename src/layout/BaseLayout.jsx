@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Navbar from "../containers/Navbar";
+import Footer from '../containers/Footer';
 
 const BaseLayout =({children})=>{
     
@@ -7,7 +8,7 @@ const BaseLayout =({children})=>{
         <>
         <Navbar/>
         {children}
-        <footer>footer</footer>
+        <Footer/>
         </>
     );
 }

@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import logo1 from "../../assets/logo01.png";
-import CartWidget from "../../components/cartWidget";
+import CartWidget from "../../components/CartWidget";
 import Menu from "../../components/Menu";
 
 const Navbar = () => {
@@ -16,20 +17,21 @@ const Navbar = () => {
       label: 'Contacto',
       href: '/contacto'
     }
+    
   ]
   return (
     <header className="header">
       <nav className="navbar container">
-        <a className="nabvar__logo" href="/">
+        <Link className="nabvar__logo" to="/">
         <figure >
           <img className="navbar__img" src={logo1} alt="" />
         </figure>
-        </a>
+        </Link>
         <Menu className='navbar' links={links}>
           <li>
-            <a href="" className="navbar__link-button">
+            <Link to="/Carrito" className="navbar__link-button">
               <CartWidget quantity={0}/>
-            </a>
+            </Link>
           </li>
         </Menu> 
 

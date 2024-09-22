@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import LinkButton from "../LinkButton";
 
 const Menu = ({links, className, children}) => {
 

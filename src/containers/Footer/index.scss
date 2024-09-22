@@ -1,0 +1,37 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  position: relative;
+
+
+  &__icon {
+    font-size: $xsmall;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+  }
+  &__img {
+    width: 30%;
+  }
+
+  &__item {
+    padding: 0.8rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    color: $white;
+    font-size: 0.8em;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+      border-radius: 4px;
+    }
+  }
+}

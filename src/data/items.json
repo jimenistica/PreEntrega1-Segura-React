@@ -3,7 +3,7 @@
         "id":1,
         "name":"Vaso Térmico Stanley",
         "price": 30000,
-        "category": "vasos",
+        "category": "botellas-vasos",
         "img":{
            "principal": "/vaso-stanley.webp",
            "secundaria": "/vaso-stanley-2.webp"
@@ -15,7 +15,7 @@
         "id":2,
         "name":"Set de mate Stanley",
         "price": 60000,
-        "category": "sets-materos",
+        "category": "mundo-mate",
         "img":{
             "principal": "/set-stanley.webp",
             "secundaria": "/set-stanley-2.webp"
@@ -27,7 +27,7 @@
         "id":3,
         "name":"Set botellas",
         "price": 10000,
-        "category": "botellas",
+        "category": "botellas-vasos",
         "img":{
             "principal": "/set-botellas-3.webp",
             "secundaria": "/set-botellas-3-2.webp"
@@ -39,13 +39,182 @@
         "id":4,
         "name":"Veladores diseño",
         "price": 16000,
-        "category": "deco",
+        "category": "hogar",
         "img":{
             "principal": "/lampara-galaxia.webp",
             "secundaria": "/lampara-galaxia-2.webp"
          },
         "stock": 10,
         "description": "velador universo varios modelos"
+    },
+    {
+        "id":5,
+        "name":"Almohada inteligente",
+        "price": 16500,
+        "category": "hogar",
+        "img":{
+            "principal": "/almohada-1.webp",
+            "secundaria": "/almohada-2.png"
+         },
+        "stock": 10,
+        "description": "almohada inteligente"
+    },
+    {
+        "id":6,
+        "name":"Acolchado nórdico",
+        "price": 16500,
+        "category": "hogar",
+        "img":{
+            "principal": "/acolchado-nordico-1.webp",
+            "secundaria": "/acolchado-nordico-2.webp"
+         },
+        "stock": 10,
+        "description": "acolchado nórdico varias medidas"
+    },
+    {
+        "id":7,
+        "name":"Batidora de mano",
+        "price": 16500,
+        "category": "minielectro",
+        "img":{
+            "principal": "/batidora-1.webp",
+            "secundaria": "/batidora-2.webp"
+         },
+        "stock": 10,
+        "description": "batidora de mano"
+    },
+    {
+        "id":8,
+        "name":"Dispenser de jabón",
+        "price": 16500,
+        "category": "hogar",
+        "img":{
+            "principal": "/dispenser-jabon-1.webp",
+            "secundaria": "/dispenser-jabon-2.webp"
+         },
+        "stock": 10,
+        "description": "batidora de mano"
+    },
+    {
+        "id":9,
+        "name":"Patillera",
+        "price": 16500,
+        "category": "minielectro",
+        "img":{
+            "principal": "/patillera-1.webp",
+            "secundaria": "/patillera-2.webp"
+         },
+        "stock": 10,
+        "description": "patillera eléctrica varios colores"
+    },
+    {
+        "id":10,
+        "name":"Pava eléctrica",
+        "price": 16500,
+        "category": "minielectro",
+        "img":{
+            "principal": "/pava-1.webp",
+            "secundaria": "/pava-2.webp"
+         },
+        "stock": 10,
+        "description": "pava eléctric alumninio"
+    },
+    {
+        "id":11,
+        "name":"Secador de pelo",
+        "price": 16500,
+        "category": "minielectro",
+        "img":{
+            "principal": "/secador-cabello-1.webp",
+            "secundaria": "/secador-cabello-2.webp"
+         },
+        "stock": 10,
+        "description": "secador de pelo"
+    },
+    {
+        "id":12,
+        "name":"Set termo + 3 tazas",
+        "price": 16500,
+        "category": "termos",
+        "img":{
+            "principal": "/termo-3tazas-1.webp",
+            "secundaria": "/termo-3tazas-2.webp"
+         },
+        "stock": 10,
+        "description": "Termo 500ml + 3 tazas. Varios colores"
+    },
+    {
+        "id":13,
+        "name":"Termo con sensor de temperatura",
+        "price": 16500,
+        "category": "termos",
+        "img":{
+            "principal": "/termo-sensor-1.webp",
+            "secundaria": "/termo-sensor-2.webp"
+         },
+        "stock": 10,
+        "description": "Termo 500ml con sensor de temperatura. Varios colores"
+    },
+    {
+        "id":14,
+        "name":"Toallón",
+        "price": 16500,
+        "category": "hogar",
+        "img":{
+            "principal": "/toallon-1.webp",
+            "secundaria": "/toallon-2.webp"
+         },
+        "stock": 10,
+        "description": "Toallón varios colores"
+    },
+    {
+        "id":15,
+        "name":"Latas stanley",
+        "price": 16500,
+        "category": "mundo-mate",
+        "img":{
+            "principal": "/set-latas-stanley-1.webp",
+            "secundaria": "/set-latas-stanley-2.webp"
+         },
+        "stock": 10,
+        "description": "Set de latas Stanley varios colores"
+    },
+    {
+        "id":16,
+        "name":"Latas matero",
+        "price": 16500,
+        "category": "mundo-mate",
+        "img":{
+            "principal": "/set-latas-1.webp",
+            "secundaria": "/set-latas-2.webp"
+         },
+        "stock": 10,
+        "description": "Set de latas matero varios colores"
+    },
+    {
+        "id":17,
+        "name":"Mate stanley",
+        "price": 16500,
+        "category": "mundo-mate",
+        "img":{
+            "principal": "/mate-stanley-1.webp",
+            "secundaria": "/mate-stanley-2.webp"
+         },
+        "stock": 10,
+        "description": "Mate Stanley varios colores"
+    },
+    {
+        "id":18,
+        "name":"Mochila matera",
+        "price": 16500,
+        "category": "mundo-mate",
+        "img":{
+            "principal": "/mochila-matera-1.webp",
+            "secundaria": "/mochila-matera-2.webp"
+         },
+        "stock": 10,
+        "description": "Mochila matera Discovery varios colores"
     }
+    
 
 ]

@@ -5,8 +5,15 @@
 @import './styles/reset';
 @import './styles/shared';
 
+/*pages*/
+@import './pages/Tienda/index.scss';
+@import './pages/Detail/index.scss';
+@import './pages/Carrito/index.scss';
+
 /*Containers*/
 @import './containers/Navbar/';
+@import './containers/Counter';
+@import './containers/Footer/index.scss';
 
 /*Components*/
 @import './components/LinkButton';
@@ -15,5 +22,7 @@
 @import './components/ItemProduct';
 @import './components/ItemProductList';
 @import './components/ItemDetail';
-@import './containers/Counter';
+@import './components/Carrusel/index.scss';
+@import './components/Spinner/index.scss';
+
 

@@ -3,3 +3,15 @@
     margin: 0 auto;
     padding: $jumbo ;
 }
+.principal-button{
+    background-color: $primary;
+      color: $white;
+      font-size: large;
+      padding: 1rem 1.5rem;
+      border: none;
+      text-align: -webkit-center;
+      cursor: pointer;
+      &:hover {
+        background-color: $lighter;
+      }
+}
