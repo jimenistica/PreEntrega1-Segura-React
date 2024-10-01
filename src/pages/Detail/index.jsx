@@ -1,24 +1,33 @@
 import { useEffect, useState } from "react";
-import ItemDetail from "../../components/ItemDetail";
 import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../config/firebase.config";
+
+
+import ItemDetail from "../../components/ItemDetail";
 import Spinner from "../../components/Spinner";
 
 const Detail = () => {
   const { id } = useParams();
   let [item, setItem] = useState(null);
-  let [items, setItems] = useState([]);
   let [loading, setLoading] = useState(false);
   let [fallback, setFallback] = useState(false);
 
   useEffect(() => {
     setLoading(true);
-     fetch("/src/data/items.json")
-       .then((res) => res.json())
-       .then((data) => setItem(data.find((item) => item.id == id)))
-       .catch((e) => {
-         setFallback(true);
-       })
-       .finally(() => setLoading(false));
+    const docRef = doc(db, "items", id);
+
+    getDoc(docRef)
+    .then((snapshot) =>
+      snapshot.exists()
+        ? setItem({ id: snapshot.id, ...snapshot.data() })
+        : setFallback(true)
+    )
+    .catch((e) => {
+      setFallback(true);
+    })
+    .finally(() => setLoading(false));
+
   }, []);
 
   return (

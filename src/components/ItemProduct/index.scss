@@ -1,73 +1,70 @@
 .item {
-    &__picture {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      position: relative;
-  
-      &--pill {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: $small;
-        font-weight: 600;
-        background-color: $lighter;
-        color: $white;
-        padding: 1rem 2rem;
-      }
-  
-      &--img {
-       
-        height: 250px;
-        object-position: center;
-        object-fit: contain;
-        // animation: fade 0.7s;
-      }
-  
-      &--img--2 {
-        display: none;
-      }
-  
-      &:hover .item__picture--img--1 {
-        display: none;
-      }
-      &:hover .item__picture--img--2 {
-        // animation: fade 0.7s;
-        display: block;
-      }
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 5px 2px;
+  &__picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+    &--img {
+      height: 250px;
+      object-position: center;
+      object-fit: contain;
     }
-  
-    a {
-      font-size: inherit;
-      text-decoration: none;
-      color: inherit;
+
+    &--img--2 {
+      display: none;
     }
-  
-    &__info {
-      font-family: $inter;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      gap: 1rem;
-      &--title {
-        font-size: $xsmall;
-        font-weight: 400;
-      }
-      &--item {
-        font-size: $medium;
-        font-weight: bold;
-      }
-      &--price {
-        font-size: $small;
-      }
-      &--dues {
-        color: $primary;
-        font-size: $xsmall;
-        font-weight: bold;
-      }
+
+    &:hover .item__picture--img--1 {
+      display: none;
+    }
+    &:hover .item__picture--img--2 {
+      display: block;
     }
   }
+
+  &__new {
+    position: absolute;
+    z-index: 1000;
+    background-color: $primary;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 1px;
+    
+  }
+  a {
+    font-size: inherit;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__info {
+    font-family: $inter;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    &--title {
+      font-size: $xsmall;
+      font-weight: 400;
+    }
+    &--item {
+      font-size: $medium;
+      font-weight: bold;
+    }
+    &--price {
+      font-size: $small;
+    }
+    &--dues {
+      color: $primary;
+      font-size: $xsmall;
+      font-weight: bold;
+    }
+  }
+}

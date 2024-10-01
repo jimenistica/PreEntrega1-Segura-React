@@ -1,27 +1,29 @@
-
-.custom-text {
-    top: 300px;
-  p {
-    font-size: 3em;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 5px;
-    font-family: $raleway;
-  }
-
-}
-@keyframes zoomIn {
-    0% {
-      transform: scale(1); 
+.carrusel{
+  margin-bottom: 3rem;
+  .custom-text {
+      top: 300px;
+    p {
+      font-size: 3em;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 5px;
+      font-family: $raleway;
     }
-    100% {
-      transform: scale(1.2); 
-    }
-  }
   
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    animation: zoomIn 15s infinite alternate;
   }
+  @keyframes zoomIn {
+      0% {
+        transform: scale(1); 
+      }
+      100% {
+        transform: scale(1.2); 
+      }
+    }
+    
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      animation: zoomIn 15s infinite alternate;
+    }
+}
   

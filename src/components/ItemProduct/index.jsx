@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 
-const ItemProduct=({ name, img, price, category, id})=> {
+const ItemProduct=({ name, img, price, category, id, isNew})=> {
 
     return(
         
       <article className="item">
+        {isNew && <span className="item__new">Nuevo</span>}
       <Link to={`/detalle/${id}`}>
         <picture className="item__picture">
           <img className="item__picture--img item__picture--img--1" src={`/public/images${img.principal}`} alt={`${name} - Principal`} />

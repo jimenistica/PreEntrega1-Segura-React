@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/cartContext";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ItemDetail = ({ id, name, img, category, description, price }) => {
@@ -19,7 +21,19 @@ const ItemDetail = ({ id, name, img, category, description, price }) => {
 
   const handleAdd = () => {
     addItem({ id, name, img, category, description, price, quantity });
+    toast.info(` ${name} fue añadido al carrito!`, {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: false,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+      className:'toast-custom'
+  })
   };
+
+  
 
   return (
     <section className="item-detail">
@@ -37,13 +51,13 @@ const ItemDetail = ({ id, name, img, category, description, price }) => {
       </picture>
       <article className="item-detail__info">
         <div className="item-detail__nav">
-          <Link to={`/`}>
-            <p className="item-detail__info--category">Inicio-</p>
+          <Link to={`/tienda`}>
+            <p className="item-detail__info--category">Productos/ </p>
           </Link>
           <Link to={`/tienda/${category}`}>
-            <p className="item-detail__info--category">{category}</p>
+            <p className="item-detail__info--category">{category}/</p>
           </Link>
-          <Link to={`/detalle/${id}`}><p className="item-detail__info--category">-{name}</p></Link>
+          <Link to={`/detalle/${id}`}><p className="item-detail__info--category"> {name}</p></Link>
 
         </div>
         <h2 className="item-detail__info--name">{name}</h2>
@@ -79,6 +93,7 @@ const ItemDetail = ({ id, name, img, category, description, price }) => {
           onClick={handleAdd}
         />
       </article>
+      <ToastContainer />
     </section>
   );
 };

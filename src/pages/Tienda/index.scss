@@ -31,6 +31,36 @@
             }
         }
     }
+    &__div-principal{
+        width: 80%;
+        padding: 3rem;
+    }
+
+    &__sort{
+        width: 100%;
+        max-width: 100%;
+        height: 30px;
+        display: flex;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        align-items: center;
+        gap: 15px;
+        font-size: $small;
+        font-weight: 600;
+  
+
+        select{
+            height: 30px;
+            display: block;
+            border: 1px solid rgb(201, 201, 201);
+            padding: 5px 10px;
+            background: rgb(247, 247, 247);
+            color: rgb(0, 0, 0);
+            transition: 0.4s;
+            font-size: 0.8em;
+        }
+    }
  
 }
 h3{
