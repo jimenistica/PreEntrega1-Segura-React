@@ -22,8 +22,8 @@ const Navbar = () => {
   return (
     <header className="header">
       <nav className="navbar container">
-        <Link className="nabvar__logo" to="/">
-        <figure >
+        <Link to="/">
+        <figure className="nabvar__logo" >
           <img className="navbar__img" src={logo1} alt="" />
         </figure>
         </Link>

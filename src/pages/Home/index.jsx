@@ -100,12 +100,15 @@ const Home = () => {
         <>
       <section className="categories-section">
         <h2>CATEGORÍAS</h2>
-        <div className="categories-section__list">
+        <div className="categories-section__scroll">
+        <div className="categories-section__scroll__list">
           {categories.map((cat) => (
-            <Link to={`/tienda/${cat.name}`} key={cat.name} className="categories-section__list__item">
+            <Link to={`/tienda/${cat.name}`} key={cat.name} className="categories-section__scroll__list__item">
               <span>{cat.name}</span>
             </Link>
           ))}
+        </div>
+
         </div>
       </section>
 
