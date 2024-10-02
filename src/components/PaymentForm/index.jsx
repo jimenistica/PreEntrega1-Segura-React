@@ -53,7 +53,6 @@ const PaymentForm = ({ cardInfo, handleInputChange, handleInputFocus, pagoAproba
           />
         </div>
         <button type="submit" className="principal-button" disabled={loading}>
-            {console.log('loading:', loading)}
         {loading ? <Spinner/> : "Pagar"}
         </button>
       </form>

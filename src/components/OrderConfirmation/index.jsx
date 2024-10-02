@@ -4,9 +4,7 @@ import { db } from '../../config/firebase.config';
 
 const OrderConfirmation = async (order, clearCart, navigate) => {
   try {
-    console.log("Intentando crear la orden en Firestore...");
     const docRef = await addDoc(collection(db, "orders"), order);
-    console.log("Orden creada con éxito:", docRef.id);
     const orderId = docRef.id;
 
     Swal.fire({
