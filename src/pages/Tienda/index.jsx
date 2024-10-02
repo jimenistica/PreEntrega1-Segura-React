@@ -30,11 +30,8 @@ const Tienda = () => {
         if (snapshot.size===0) {
           setFallback({visible:true, mesage:'No econtramos reultados'});
         }else{
-          // setItems(snapshot.docs.map(doc=> ({id: doc.id, ...doc.data()})));
+           setItems(snapshot.docs.map(doc=> ({id: doc.id, ...doc.data()})));
 
-          const filteredItems = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        console.log(filteredItems);  // Verifica los productos filtrados
-        setItems(filteredItems);
 
         }
        
