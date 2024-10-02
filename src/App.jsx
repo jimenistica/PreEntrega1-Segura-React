@@ -11,7 +11,7 @@ import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
     <CartContextProvider>
-      <BrowserRouter basename="/melodiasimplestore">
+      <BrowserRouter >
         <BaseLayout>
           <Routes>
             <Route path="/" element={<Home/>}/>

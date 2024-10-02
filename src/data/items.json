@@ -3,7 +3,7 @@
         "id":1,
         "name":"Vaso Térmico Stanley",
         "price": 30000,
-        "category": "botellas-vasos",
+        "category": "Botellas-Vasos",
         "img":{
            "principal": "/vaso-stanley.webp",
            "secundaria": "/vaso-stanley-2.webp"
@@ -15,7 +15,7 @@
         "id":2,
         "name":"Set de mate Stanley",
         "price": 60000,
-        "category": "mundo-mate",
+        "category": "Mate",
         "img":{
             "principal": "/set-stanley.webp",
             "secundaria": "/set-stanley-2.webp"
@@ -27,7 +27,7 @@
         "id":3,
         "name":"Set botellas",
         "price": 10000,
-        "category": "botellas-vasos",
+        "category": "Botellas-Vasos",
         "img":{
             "principal": "/set-botellas-3.webp",
             "secundaria": "/set-botellas-3-2.webp"
@@ -39,7 +39,7 @@
         "id":4,
         "name":"Veladores diseño",
         "price": 16000,
-        "category": "hogar",
+        "category": "Hogar",
         "img":{
             "principal": "/lampara-galaxia.webp",
             "secundaria": "/lampara-galaxia-2.webp"
@@ -51,7 +51,7 @@
         "id":5,
         "name":"Almohada inteligente",
         "price": 16500,
-        "category": "hogar",
+        "category": "Hogar",
         "img":{
             "principal": "/almohada-1.webp",
             "secundaria": "/almohada-2.png"
@@ -63,7 +63,7 @@
         "id":6,
         "name":"Acolchado nórdico",
         "price": 16500,
-        "category": "hogar",
+        "category": "Hogar",
         "img":{
             "principal": "/acolchado-nordico-1.webp",
             "secundaria": "/acolchado-nordico-2.webp"
@@ -75,7 +75,7 @@
         "id":7,
         "name":"Batidora de mano",
         "price": 16500,
-        "category": "minielectro",
+        "category": "Minielectro",
         "img":{
             "principal": "/batidora-1.webp",
             "secundaria": "/batidora-2.webp"
@@ -87,7 +87,7 @@
         "id":8,
         "name":"Dispenser de jabón",
         "price": 16500,
-        "category": "hogar",
+        "category": "Hogar",
         "img":{
             "principal": "/dispenser-jabon-1.webp",
             "secundaria": "/dispenser-jabon-2.webp"
@@ -99,7 +99,7 @@
         "id":9,
         "name":"Patillera",
         "price": 16500,
-        "category": "minielectro",
+        "category": "Minielectro",
         "img":{
             "principal": "/patillera-1.webp",
             "secundaria": "/patillera-2.webp"
@@ -111,7 +111,7 @@
         "id":10,
         "name":"Pava eléctrica",
         "price": 16500,
-        "category": "minielectro",
+        "category": "Minielectro",
         "img":{
             "principal": "/pava-1.webp",
             "secundaria": "/pava-2.webp"
@@ -123,7 +123,7 @@
         "id":11,
         "name":"Secador de pelo",
         "price": 16500,
-        "category": "minielectro",
+        "category": "Minielectro",
         "img":{
             "principal": "/secador-cabello-1.webp",
             "secundaria": "/secador-cabello-2.webp"
@@ -159,7 +159,7 @@
         "id":14,
         "name":"Toallón",
         "price": 16500,
-        "category": "hogar",
+        "category": "Hogar",
         "img":{
             "principal": "/toallon-1.webp",
             "secundaria": "/toallon-2.webp"
@@ -171,7 +171,7 @@
         "id":15,
         "name":"Latas stanley",
         "price": 16500,
-        "category": "mundo-mate",
+        "category": "Mate",
         "img":{
             "principal": "/set-latas-stanley-1.webp",
             "secundaria": "/set-latas-stanley-2.webp"
@@ -183,7 +183,7 @@
         "id":16,
         "name":"Latas matero",
         "price": 16500,
-        "category": "mundo-mate",
+        "category": "Mate",
         "img":{
             "principal": "/set-latas-1.webp",
             "secundaria": "/set-latas-2.webp"
@@ -195,7 +195,7 @@
         "id":17,
         "name":"Mate stanley",
         "price": 16500,
-        "category": "mundo-mate",
+        "category": "Mate",
         "img":{
             "principal": "/mate-stanley-1.webp",
             "secundaria": "/mate-stanley-2.webp"
@@ -207,7 +207,7 @@
         "id":18,
         "name":"Mochila matera",
         "price": 16500,
-        "category": "mundo-mate",
+        "category": "Mate",
         "img":{
             "principal": "/mochila-matera-1.webp",
             "secundaria": "/mochila-matera-2.webp"
