@@ -40,12 +40,12 @@ const ItemDetail = ({ id, name, img, category, description, price }) => {
       <picture className="item-detail__picture">
         <img
           className="item-detail__picture--img item-detail__picture--img--1"
-          src={`./images${img?.principal}`}
+          src={`/images${img?.principal}`}
           alt={`${name} - Principal`}
         />
         <img
           className="item-detail__picture--img item-detail__picture--img--2"
-          src={`./images${img?.secundaria}`}
+          src={`/images${img?.secundaria}`}
           alt={`${name} - Secundaria`}
         />
       </picture>
