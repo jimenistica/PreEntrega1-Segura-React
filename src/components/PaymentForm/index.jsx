@@ -1,7 +1,8 @@
 import Cards from "react-credit-cards-2";
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
+import Spinner from './../Spinner/index';
 
-const PaymentForm = ({ cardInfo, handleInputChange, handleInputFocus, pagoAprobado }) => {
+const PaymentForm = ({ cardInfo, handleInputChange, handleInputFocus, pagoAprobado, loading }) => {
   return (
     <div className="modal__cards">
       <Cards
@@ -51,7 +52,10 @@ const PaymentForm = ({ cardInfo, handleInputChange, handleInputFocus, pagoAproba
             required
           />
         </div>
-        <button type="submit" className="principal-button">Pagar</button>
+        <button type="submit" className="principal-button" disabled={loading}>
+            {console.log('loading:', loading)}
+        {loading ? <Spinner/> : "Pagar"}
+        </button>
       </form>
     </div>
   );

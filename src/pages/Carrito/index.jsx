@@ -275,7 +275,9 @@ import PaymentForm from "../../components/PaymentForm";
 import OrderConfirmation from "../../components/OrderConfirmation";
 import Swal from "sweetalert2";
 
+
 const Carrito = () => {
+  const [loading, setLoading] = useState(false);
   const { cartItems, removeItem, clearCart, addItem } = useContext(CartContext);
   const totalCompra = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
   const navigate = useNavigate();
@@ -353,6 +355,10 @@ const Carrito = () => {
   };
 
   const pagoAprobado = async (e) => {
+    console.log("Estado inicial de loading:", loading);
+    setLoading(true);
+    console.log("Loading después de setLoading(true):", loading);
+
     console.log("Fecha de expiración ingresada:", cardInfo.expiry);
     e.preventDefault();
     if (!validarNumeroTarjeta(cardInfo.number)) {
@@ -360,7 +366,9 @@ const Carrito = () => {
         icon: 'error',
         title: 'Número de tarjeta inválido',
         text: 'El número de tarjeta debe tener 16 dígitos.',
+       
       });
+      setLoading(false);
       return;
     }
 
@@ -370,6 +378,7 @@ const Carrito = () => {
         title: 'Fecha de expiración inválida',
         text: 'La fecha de expiración debe tener el formato MM/AA y ser posterior a la fecha actual.',
       });
+      setLoading(false);
       return;
     }
 
@@ -379,6 +388,7 @@ const Carrito = () => {
         title: 'CVC inválido',
         text: 'El CVC debe tener 3 dígitos.',
       });
+      setLoading(false);
       return;
     }
 
@@ -388,16 +398,32 @@ const Carrito = () => {
         title: 'Nombre faltante',
         text: 'Por favor completa el nombre en la tarjeta.',
       });
+      setLoading(false);
       return;
     }
     
-    const order = {
-      buyer: { ...cardInfo },
-      items: cartItems,
-      total: totalCompra + 2000,
-      date: new Date().toISOString(),
-    };
-    OrderConfirmation(order, clearCart, navigate);
+    try{
+      const order = {
+        buyer: { ...cardInfo },
+        items: cartItems,
+        total: totalCompra + 2000,
+        date: new Date().toISOString(),
+      };
+      OrderConfirmation(order, clearCart, navigate);
+
+      setLoading(false);
+      console.log("Loading después de setLoading(false):", loading);
+
+    } catch (error) {
+      // Manejar cualquier error y detener el spinner
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Hubo un problema con el pago. Intenta nuevamente.',
+      });
+      setLoading(false);
+      console.log("Loading después de setLoading(false):", loading);
+    }
   };
 
   return (
@@ -454,6 +480,7 @@ const Carrito = () => {
           handleInputChange={handleInputChange}
           handleInputFocus={handleInputFocus}
           pagoAprobado={pagoAprobado}
+          loading={loading}
         />
       </Modal>
     </section>
