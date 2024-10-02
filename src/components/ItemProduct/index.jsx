@@ -8,8 +8,8 @@ const ItemProduct=({ name, img, price, category, id, isNew})=> {
         {isNew && <span className="item__new">Nuevo</span>}
       <Link to={`/detalle/${id}`}>
         <picture className="item__picture">
-          <img className="item__picture--img item__picture--img--1" src={`/public/images${img.principal}`} alt={`${name} - Principal`} />
-          <img className="item__picture--img item__picture--img--2" src={`/public/images${img.secundaria}`} alt={`${name} - Secundaria`} />
+          <img className="item__picture--img item__picture--img--1" src={`./images${img.principal}`} alt={`${name} - Principal`} />
+          <img className="item__picture--img item__picture--img--2" src={`./images${img.secundaria}`} alt={`${name} - Secundaria`} />
         </picture>
         <div className="item__info">
           <h3 className="item__info--title">{category}</h3>

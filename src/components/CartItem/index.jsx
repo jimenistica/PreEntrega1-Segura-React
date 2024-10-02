@@ -14,7 +14,7 @@ const CartItem = ({ item, removeItem, addItem }) => {
         <picture className="carrito-item__picture">
           <img
             className="carrito-item__picture__img"
-            src={`/public/images${item.img.principal}`}
+            src={`./images${item.img.principal}`}
             alt={item.name}
           />
         </picture>
