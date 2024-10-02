@@ -355,10 +355,7 @@ const Carrito = () => {
   };
 
   const pagoAprobado = async (e) => {
-    console.log("Estado inicial de loading:", loading);
     setLoading(true);
-    console.log("Loading después de setLoading(true):", loading);
-
     console.log("Fecha de expiración ingresada:", cardInfo.expiry);
     e.preventDefault();
     if (!validarNumeroTarjeta(cardInfo.number)) {
@@ -412,7 +409,6 @@ const Carrito = () => {
       OrderConfirmation(order, clearCart, navigate);
 
       setLoading(false);
-      console.log("Loading después de setLoading(false):", loading);
 
     } catch (error) {
       // Manejar cualquier error y detener el spinner
