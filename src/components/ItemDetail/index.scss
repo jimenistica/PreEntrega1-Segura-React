@@ -59,19 +59,34 @@
     }
     &--name {
       font-size: $jumbo;
+
+      @media (max-width: 900px) {
+        font-size: $xlarge;
+      }
     }
     &--description {
       font-size: $large;
       color: $secondary;
       font-weight: 400;
       max-width: 70%;
+      
+      @media (max-width: 900px) {
+        font-size: $medium;
+      }
     }
     &--price {
       font-size: $jumbo;
+      @media (max-width: 900px) {
+        font-size: $xlarge;
+      }
     }
   }
   &__nav{
     display: flex;
+
+    @media (max-width: 900px) {
+      font-size: 0.8rem;
+    }
   }
 
   &__form {

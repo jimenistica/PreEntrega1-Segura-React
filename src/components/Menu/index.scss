@@ -1,0 +1,18 @@
+.footer-style {
+    flex-direction: row;
+  }
+  
+  .navbar-style {
+    @media (max-width: 991.98px) {
+      padding: 5px 0px;
+        margin: 0px;
+        height: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.4s;
+    }
+  }

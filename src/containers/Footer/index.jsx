@@ -19,10 +19,8 @@ const Footer = () => {
   ];
   return (
     <footer className="footer">
-      <a className="footer__logo" href="/">
-        <img className="footer__img" src={logo1} alt="" />
-      </a>
-      <Menu className="footer" links={links}>
+
+      <Menu className="footer" links={links} isFooter={true}>
         <br />
    
         <li>

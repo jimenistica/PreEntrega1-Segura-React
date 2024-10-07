@@ -25,5 +25,9 @@
       height: auto;
       animation: zoomIn 15s infinite alternate;
     }
+
+    @media (max-width:768px){
+        display: none;
+    }
 }
   

@@ -423,7 +423,7 @@ const Carrito = () => {
   };
 
   return (
-    <section className="main">
+    <section className="main container">
       <h2>CARRITO</h2>
       <div className="carrito-page">
         <div className="carrito">

@@ -1,3 +1,8 @@
+html, body {
+  width: 100%;
+  
+}
+
 .section-home{
   display: flex;
   flex-direction: column;
@@ -16,26 +21,25 @@
 
     &__scroll{
       position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
+   
+    width: 100vw;
     white-space: nowrap;
     margin: clamp(5px, 2vw, 10px) auto;
     padding: 10px;
-    overflow: hidden;
-      
-      &__list {
-        // display: flex;
-        // justify-content: center;
-         gap: 6.5rem;
-        // flex-wrap: wrap;
-        margin: 4rem;
-
-        display: flex;
-    overflow-x: auto; 
+    overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     -ms-overflow-style: none;
-    scrollbar-width: none; 
+    box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+      display: none; 
+    }
+      
+      &__list {
+         display: inline-flex;
+         gap: 2rem;
+        margin: 1rem;
     
         &__item {
           padding: 1.5rem 3rem;
@@ -47,6 +51,8 @@
           background-color: $black;
           cursor: pointer;
           transition: all .3s linear;
+          display: inline-block; 
+          white-space: nowrap; 
     
           &:hover {
             background-color: $white;

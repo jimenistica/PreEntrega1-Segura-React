@@ -7,6 +7,7 @@ import Carrito from "./pages/Carrito";
 import { CartContextProvider } from "./context/cartContext";
 import Contacto from './pages/Contacto/index';
 import ErrorPage from "./pages/ErrorPage";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   
   h2{
     font-size: $xlarge;
@@ -16,6 +18,9 @@
     align-items: flex-start;
     gap: 5rem;
     width: 100%;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 
     .carrito {
       width: 60%;
@@ -24,6 +29,10 @@
       flex-wrap: wrap;
       align-items: flex-end;
       align-content: space-around;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+   
 
       &__mensaje{
         width: 100%;
@@ -50,6 +59,10 @@
           font-size: $small;
           color: $secondary;
           font-weight: 600;
+
+          @media (max-width: 900px) {
+            font-size: $xsmall;
+          }
         }
 
         th {
@@ -57,6 +70,10 @@
           color: $secondary;
           font-size: $medium;
           font-weight: 700;
+          @media (max-width: 900px) {
+            font-size: $small;
+          }
+  
         }
 
         .carrito-item {
@@ -89,6 +106,12 @@
           &:hover {
             background-color: $lighter;
           }
+
+          @media (max-width: 900px) {
+            width: 1.8rem;
+          height: 1.8rem;
+
+          }
         }
 
         span {
@@ -112,6 +135,11 @@
       flex-wrap: wrap;
       border: 1px solid $secondary-ligther;
       box-shadow: rgba(0, 0, 0, 0.16) 2px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+      @media (max-width: 900px) {
+        width: 80%;
+        margin: 2rem auto;
+    }
 
       h3 {
         text-align: center;
@@ -154,6 +182,10 @@
   position: relative;
   z-index: 1000;
 
+  @media (max-width: 900px) {
+    max-width: 80%;
+  }
+
   &__cards{
     display: flex;
     flex-flow: wrap;
@@ -186,6 +218,11 @@
       height: 30px;
       border-radius: 0px;
       font-size: $medium;
+      @media (max-width: 900px) {
+        font-size: $xsmall;
+      }
+
+      
 }
       &__div{
         width: 100%;

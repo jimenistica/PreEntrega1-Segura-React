@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-const Menu = ({links, className, children}) => {
+const Menu = ({links, className, children, isFooter}) => {
 
   return (
-    <menu className={`${className}__menu`}>
+    <menu className={`${className}__menu ${isFooter ? "footer-style" : "navbar-style"}`}>
       { links.map((link, i) => {
 
         return(

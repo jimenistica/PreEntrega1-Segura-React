@@ -77,7 +77,7 @@ const Home = () => {
         .filter((item) => {
           const itemDate = item.date.toDate();
           const difference = Math.floor((currentDate - itemDate) / (1000 * 60 * 60 * 24));
-          return difference <= 10; // Filtrar productos con menos de 10 días
+          return difference <= 30; // Filtrar productos con menos de 10 días
         });
 
       setNewItems(newItems);
